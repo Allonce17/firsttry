@@ -5,16 +5,19 @@
 # в квадрате с суммой квадратов двух остальных сторон. Если все 3 стороны равны, то треугольник равнобедренный и
 # равносторонний, но не прямоугольный.
 storona = []
+puts 'введите сторону a'
 storona << gets.to_f
+puts 'введите сторону b'
 storona << gets.to_f
+puts 'введите сторону c'
 storona << gets.to_f
 storona.sort!
 
   if storona[-1]**2 == storona[0]**2 + storona[1]**2
-  puts 'kvadr'
+  puts 'треугольник - прямоугольный'
   elsif storona.uniq.length == 2
-    puts 'ravnobedr'
+    puts 'треугольник - равнобедренный'
   else
-    puts 'ravnostor'
+    puts 'треугольник - равносторонний'
 
 end
