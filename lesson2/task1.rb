@@ -2,14 +2,14 @@
 #запрашиваем имя и рост пользователя
 #добавляем полученные данные в формулу
 puts 'добро пожаловать в программу: твой идеальный вес'
-  puts 'ваше имя: '
-  name = gets.chomp
-  puts 'ваш рост: '
-  growth = gets.to_i
+puts 'ваше имя: '
+name = gets.chomp
+puts 'ваш рост: '
+growth = gets.to_i
 weight = (growth - 110) * 1.15
   if weight < 0
-   puts " #{name}, ваш вес уже оптимальнй"
-   else
+    puts " #{name}, ваш вес уже оптимальнй"
+  else
     puts " #{name}, ваш идеальный вес: #{weight} "
   end
 
