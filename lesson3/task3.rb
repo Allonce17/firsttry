@@ -8,11 +8,10 @@ fib_amount = 11
 fibonacci = []
 
 fib_amount.times do
-    a = nextterm
     nextterm = first + second
     first = second
     second = nextterm
-    fibonacci << a
+    fibonacci << nextterm
 
 end
 
