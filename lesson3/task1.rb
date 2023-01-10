@@ -15,4 +15,4 @@ months =
     "november" => 30,
     "december" => 31,
 }
-months.count { |k,v|puts k if v ==30  }
+months.count { |days,months|puts k if v ==30  }
