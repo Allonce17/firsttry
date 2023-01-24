@@ -6,18 +6,14 @@
 #но это рещение будет не вприсываться в условие задачи)
 #мною было решено вместо 2 условий сделать одно с проверкой наличия добавки
 class Soda
-	attr_accessor :additive
-	def initialize 	
-		@additive = additive
-	end
-
-	def show_my_drink
-        if additive == ""
-           puts 'Обычная газировка' 
+  attr_accessor :additive
+    def show_my_drink
+       if additive == ""
+          puts 'Обычная газировка' 
         else
            puts "Газировка и #{additive}" 
-        end
-    end
+     end
+   end
 end        
 
 cola = Soda.new
