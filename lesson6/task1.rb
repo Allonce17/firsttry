@@ -17,5 +17,5 @@ class Soda
 end        
 
 cola = Soda.new
-cola.additive = "caramel"
+cola.additive = 'caramel'
 cola.show_my_drink
