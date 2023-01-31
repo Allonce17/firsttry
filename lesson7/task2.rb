@@ -2,31 +2,31 @@
 # с методами area() и perimeter(), которые возвращают площадь и периметр фигуры.
 # Используйте полиморфизм.
 class Figure
-	attr_accessor :side_a, :side_b, :side_c
-	def initialize
-		@side_a = side_a
-		@side_b = side_b
-		@side_c = side_c
-	end
+  attr_accessor :side_a, :side_b, :side_c
+  def initialize
+    @side_a = side_a
+    @side_b = side_b
+    @side_c = side_c
+  end
 end
 
 class Circle < Figure
-	attr_accessor :radius
-	def initialize
-		@radius = radius
-	end	
-	def area
-		Math::PI * radius ** 2
-	end	
-	def perimetr
-		Math::PI * radius * 2 
-	end	
+  attr_accessor :radius
+  def initialize
+    @radius = radius
+  end	
+  def area
+    Math::PI * radius ** 2
+  end	
+  def perimetr
+    Math::PI * radius * 2 
+  end	
 end
 
 class Square < Figure
-	def area
-		side_a ** 2
-	end
+  def area
+    side_a ** 2
+  end
 	def perimetr
 		side_a * 4
 	end
