@@ -6,27 +6,28 @@
 #Также класс должен иметь метод course(), который будет выводить текущий курс студента (от 1 до 5). 
 #Курс вычисляется так: нужно от текущего года отнять год поступления в вуз. Текущий год получите самостоятельно.
 class User
-	attr_accessor :name, :surname, :year
-	def initialize
-		@name = name
-		@surname = surname
-		@year = year
-	end
+  attr_accessor :name, :surname, :year
+  def initialize
+    @name = name
+    @surname = surname
+    @year = year
+  end
 end
 
 class Student < User
 MIN = 1
 MAX = 5
-	def full_name
-		puts "my name is #{name} #{surname}"
-	end	
-	def course
-		current_course = Time.new.year - year + 1
-		puts "I'm studing on #{current_course} course"
-			if current_course < MIN || current_course > MAX 
-				raise "invalid year"
-			end	
-	end	
+  def full_name
+    puts "my name is #{name} #{surname}"
+  end	
+  
+  def course
+    current_course = Time.new.year - year + 1
+    puts "I'm studing on #{current_course} course"
+      if current_course < MIN || current_course > MAX 
+        raise "invalid year"
+      end	
+  end	
 end
 
 l = Student.new
