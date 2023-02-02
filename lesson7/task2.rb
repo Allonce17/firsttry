@@ -65,5 +65,5 @@ f = Triangle.new
 f.side_a = 3
 f.side_b = 5
 f.side_c = 4
-puts f.area
+puts f.area 
 puts f.perimetr			
